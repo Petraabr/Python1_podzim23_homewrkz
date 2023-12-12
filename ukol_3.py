@@ -5,7 +5,7 @@ with open ("body.json", mode= "r", encoding="utf-8") as slozka:
     studenti = json.load(slozka)
 prospech = {}
 
-for jmeno, znamka in studenti.items:
+for jmeno, znamka in studenti.items():
     if int(znamka) < 60:
         prospech[jmeno] = "Fail" 
     else:
