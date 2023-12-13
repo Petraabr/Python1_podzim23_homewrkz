@@ -30,6 +30,7 @@ print(typ_vozidla)
 if typ_vozidla == "Peugeot":
         print(prvni_auto.get_info())
         print(prvni_auto.pujc_auto())
+        break
     
 if typ_vozidla == "Škoda":
         print(druhe_auto.get_info())

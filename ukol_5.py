@@ -20,6 +20,10 @@ import statistics
 # poledne_a_noc = [[den[1], den[-1]] for den in teploty]
 # print(poledne_a_noc)
 
+
+#nebo:
+
+
 #bonus:
 teploty = [
     ["pondělí", 2.1, 5.2, 6.1, -0.1],
@@ -35,5 +39,3 @@ teploty = [
 
 prumerna_teplota_dany_den = { den: f""}
 print(prumerna_teplota_dany_den)
-
-procenta = {zak: f"{body}%" for zak, body in hodnoceni.items()}
