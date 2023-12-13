@@ -26,12 +26,12 @@ druhe_auto = Auto("1P3 4747", "Škoda Octavia", 41253)
 typ_vozidla = input("Které auo si chete vypůjčit: ")
 print(typ_vozidla)
     
-if typ_vozidla == "Peugeot" or typ_vozidla == "Škoda":
-    if typ_vozidla == "Peugeot":
+
+if typ_vozidla == "Peugeot":
         print(prvni_auto.get_info())
         print(prvni_auto.pujc_auto())
     
-    if typ_vozidla == "Škoda":
+if typ_vozidla == "Škoda":
         print(druhe_auto.get_info())
         print(druhe_auto.pujc_auto())
     
