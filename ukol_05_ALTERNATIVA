@@ -9,18 +9,19 @@ teploty = [
 ]
  
 def get_prumerna_teplota(teploty):
-    prumerna_tepota = []
+    prumerna_teplota = []
    
     for hodnota in teploty:
         prumerna_denni_teplota = round(sum(hodnota)/len(hodnota), 1)
     
-        prumerna_tepota.append(prumerna_denni_teplota)
-    return prumerna_tepota
+        prumerna_teplota.append(prumerna_denni_teplota)
+    return prumerna_teplota
+prumerna_teplota = get_prumerna_teplota
 
-#RANNI TEPLOTY
+ #RANNI TEPLOTY
 def get_ranni_teploty(teploty):
     ranni_teploty = []
-    # Ze zadání víme že raní teplota je vždy na prvním místě seznamu, seznamy indexujeme od 0, první hodnota je tedy na pozici indexu 0
+    
     for polozka in teploty:
         ranni_teploty.append(polozka[0])
     return ranni_teploty
@@ -33,4 +34,5 @@ def get_poledni_nocni_t(teploty):
     for polozka in teploty:
         poledni_nocni_t.append([polozka[1], polozka[3]])
     return poledni_nocni_t
+
 
